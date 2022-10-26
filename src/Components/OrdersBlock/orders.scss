@@ -1,0 +1,128 @@
+.orders {
+  background-image: url("../../Assets/BG__order.png");
+  background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (max-width: 1300px) {
+    padding: 0 50px;
+  }
+
+  @media (max-width: 645px) {
+    padding: 15px 15px;
+  }
+
+  .content {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 150px 0;
+  }
+
+  &__title {
+    text-align: center;
+    font: var(--font-xLarge-normal);
+    color: var(--color-primary);
+    margin-bottom: 30px;
+
+    @media (max-width: 645px) {
+      font: var(--font-large-normal);
+    }
+
+    span {
+      color: var(--color-success);
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    font: var(--font-medium-lighter);
+    color: var(--color-info);
+    margin-bottom: 80px;
+
+    @media (max-width: 645px) {
+      font: var(--font-small-normal);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 80px;
+
+    @media (max-width: 1050px) {
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+
+  &__item {
+    max-width: 188px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+
+    &:last-child {
+      .orders__item-icon::after {
+        display: none;
+      }
+    }
+
+    p {
+      font: var(--font-regular-lighter);
+      text-align: center;
+      color: var(--color-primary);
+
+      @media (max-width: 645px) {
+        font: var(--font-small-normal);
+      }
+    }
+  }
+
+  &__item-icon {
+    width: 100px;
+    height: 100px;
+    background: var(--color-success);
+    border: 5px solid var(--color-border);
+    border-radius: 50%;
+    margin-bottom: 20px;
+    position: relative;
+
+    @media (max-width: 645px) {
+      width:50px;
+      height: 50px;
+    }
+
+    &:after {
+      content: " ";
+      position: absolute;
+      width: 110px;
+      height: 6px;
+      right: calc(-100% - 45px);
+      top: 50%;
+      background: url('../../Assets//icons/dots2.svg') no-repeat;
+      transform: translateY(-50%);
+    }
+
+    @media (max-width: 1070px) {
+      &::after {
+        display: none;
+      }
+    }
+
+    svg {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+
+      @media (max-width: 645px) {
+        width: 15px;
+      }
+    }
+  }
+}

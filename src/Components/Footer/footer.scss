@@ -1,0 +1,91 @@
+.footer {
+    background: var(--bg-secondary);
+
+    @media (max-width: 1300px) {
+        padding: 0 50px;
+    }
+
+    &__container {
+        max-width: 1170px;
+        padding: 30px 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 710px) {
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 15 15px;
+            gap: 10px;
+        }
+    }
+
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        font: var(--font-min-lighter);
+        color: var(--color-primary);
+        gap: 0 37px;
+        position: relative;
+
+        @media (max-width: 645px) {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 400px) {
+            display: block;
+            text-align: center;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        &:before {
+            content: " ";
+            position: absolute;
+            width: 1px;
+            height: 18px;
+            left: -50px;
+            top: 50%;
+            background: var(--color-link-disabled);
+            transform: translateY(-50%);
+        }
+
+        @media (max-width: 1170px) {
+            &::before {
+                display: none;
+            }
+        }
+
+        &-items {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0 10px;
+
+            @media (max-width: 400px) {
+                margin-bottom: 5px;
+            }
+
+            svg {
+                @media (max-width: 400px) {
+                    margin-right: 5px;
+                }
+            }
+
+
+            a {
+                text-decoration: none;
+                color: var(--color-primary);
+            }
+
+            &.pay {
+                color: var(--color-link-disabled);
+            }
+        }
+
+        &:nth-child(1)::before {
+            display: none;
+        }
+    }
+}

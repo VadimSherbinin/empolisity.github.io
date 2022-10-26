@@ -1,0 +1,46 @@
+:root {
+    //ШРИФТЫ
+
+    --font-min-lighter: 400 13px / 16px 'Lato', sans-serif;
+    --font-min-normal: 700 13px / 16px 'Lato', sans-serif;
+
+    --font-small-lighter: 400 15px / 18px 'Lato', sans-serif;
+    --font-small-normal: 700 15px / 18px 'Lato', sans-serif;
+
+    --font-regular-lighter: 400 16px / 19px 'Lato', sans-serif;
+
+    --font-medium-lighter: 400 18px / 22px 'Lato', sans-serif;
+
+    --font-large-lighter: 400 20px / 24px 'Lato', sans-serif;
+    --font-large-normal: 700 20px / 24px 'Lato', sans-serif;
+
+    --font-xLarge-normal: 700 36px / 43px 'Lato', sans-serif;
+    --font-xLarge-bold: 900 36px / 43px 'Lato', sans-serif;
+
+    --font-xxLarge-normal: 700 48px / 58px 'Lato', sans-serif;
+
+    //ЦВЕТА
+
+    --color-default: #272733;
+    --color-regular: rgba(255, 255, 255, 0.7);
+    --color-active: #43ABF0;
+    --color-primary: #FFFFFF;
+    --color-success: #3E9CDC;
+    --color-focus:#42A9ED;
+    --color-border: #286690;
+    --color-border-second: rgba(255, 255, 255, 0.04);
+    --color-info: #BBBBBB;
+    --color-link-disabled: #C3C3C3;
+    --color-title: #000;
+
+    //ФОНЫ
+
+    --bg-pages: #E5E5E5;
+    --bg-pimary: rgba(16, 16, 29, 0.9);
+    --bg-secondary: #3D4050;
+    --bg-third: rgba(255, 255, 255, 0.85);
+    --bg-fourth:  #FFFFFF;
+    --bg-fifth: rgba(61, 64, 80, 0.85);
+    --bg-sixth: rgba(39, 39, 51, 0.9);
+
+}
